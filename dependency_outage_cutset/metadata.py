@@ -1,0 +1,1 @@
+DESCRIPTION = {'fr': 'Trouver les coupures minimales de dépendances d’un service', 'en': 'Find minimal dependency cut sets for a service', 'es': 'Encontrar conjuntos mínimos de corte de dependencias'}

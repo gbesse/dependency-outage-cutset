@@ -1,0 +1,41 @@
+{
+  "root": "api",
+  "nodes": [
+    {
+      "id": "api",
+      "kind": "all",
+      "children": [
+        "database",
+        "network"
+      ]
+    },
+    {
+      "id": "database",
+      "kind": "any",
+      "children": [
+        "primary",
+        "replica"
+      ]
+    },
+    {
+      "id": "primary",
+      "kind": "component"
+    },
+    {
+      "id": "replica",
+      "kind": "component"
+    },
+    {
+      "id": "network",
+      "kind": "component"
+    }
+  ],
+  "costs": {
+    "primary": 2,
+    "replica": 2,
+    "network": 3
+  },
+  "observed_failed": [
+    "primary"
+  ]
+}

@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dependency-outage-cutset"
+version = "0.1.0a1"
+description = "FR: Trouver les coupures minimales de dépendances d’un service | EN: Find minimal dependency cut sets for a service | ES: Encontrar conjuntos mínimos de corte de dependencias"
+requires-python = ">=3.11"
+license = "MIT"
+
+[project.scripts]
+dependency-outage-cutset = "dependency_outage_cutset.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["dependency_outage_cutset*"]
